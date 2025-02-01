@@ -11,7 +11,7 @@ const config: Config = {
     devMode: getStringEnv('NODE_ENV', 'development') === 'development',
 
     site: {
-        description: getStringEnv('SITE_DESCRIPTION', 'Rapidrary is an e-commerce site engine for high-quality digital content.')
+        description: getStringEnv('SITE_DESCRIPTION', 'Rapidrary is an e-commerce platform for high-quality digital content.')
     },
 
     log: {
