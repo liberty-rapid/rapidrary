@@ -1,0 +1,9 @@
+node_modules
+logs
+/books
+public
+prisma/migrations/
+.env
+.env.dev
+cert
+key

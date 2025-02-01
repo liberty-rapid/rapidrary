@@ -1,0 +1,76 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model EmailVerification {
+  verificationId String   @id @default(uuid())
+  expiresAt      DateTime
+  email          String
+  code           String
+  attemptCount   Int
+}
+
+model User {
+  id            String         @id @default(uuid())
+  email         String         @unique
+  displayName   String
+  createdAt     DateTime       @default(now())
+  oauthAccounts OAuthAccount[]
+  books         UserBook[]
+  orders        Order[]
+}
+
+model OAuthAccount {
+  id                Int      @id @default(autoincrement())
+  provider          String
+  providerAccountId String
+  userId            String
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken       String
+  refreshToken      String?
+  expiresAt         Int?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@unique([provider, providerAccountId])
+}
+
+model UserBook {
+  userId String
+  bookId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, bookId])
+}
+
+model Order {
+  id        Int      @id @default(autoincrement())
+  orderId   String   @unique
+  name      String
+  amount    Int
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  bookId    String
+  paymentId Int?     @unique
+  payment   Payment? @relation(fields: [paymentId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+}
+
+model Payment {
+  id          Int      @id @default(autoincrement())
+  paymentKey  String   @unique
+  orderName   String
+  method      String
+  currency    String
+  totalAmount Int
+  status      String
+  approvedAt  DateTime
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  order       Order[]
+}
