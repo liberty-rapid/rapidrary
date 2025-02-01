@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/de50845d-615e-47e8-b38b-d46d78b316ca" width="400">
+<img src="https://github.com/user-attachments/assets/de50845d-615e-47e8-b38b-d46d78b316ca" width="300">
 
 Rapidrary는 현대적이고 세련된 문서형 디지털 콘텐츠 플랫폼으로, OAuth 로그인과 토스페이먼츠를 통한 콘텐츠 결제를 지원합니다.
 
