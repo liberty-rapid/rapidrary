@@ -5,7 +5,11 @@ Rapidrary는 현대적이고 세련된 문서형 디지털 콘텐츠 플랫폼�
 > ⚠️ 이 프로젝트는 원래 내부 사용을 위해 개발된 것으로, 일반적인 사용을 염두에 두고 제작되지 않았습니다.
 
 ## 스크린샷
-![image](https://github.com/user-attachments/assets/11276c7a-bf27-40ca-b13b-8b9362b60d43)
-![image](https://github.com/user-attachments/assets/c4eb3734-50b6-4d89-906d-d26083a556d0)
-![image](https://github.com/user-attachments/assets/5fceda78-41cd-4470-9579-0669cba61680)
-![image](https://github.com/user-attachments/assets/8725cf94-b091-4262-86c6-84b09b6d9b68)
+![image](https://github.com/user-attachments/assets/06e5586c-e24f-43b5-83b6-cabdb80c8d5f)
+![image](https://github.com/user-attachments/assets/fdd2489d-c2d2-46f2-b7c7-b5e29e561b7f)
+![image](https://github.com/user-attachments/assets/45ec024c-cb50-4c1a-bb50-8941c2fd4a79)
+![image](https://github.com/user-attachments/assets/01b2f9fd-3fc7-42a7-95f6-c3c7910b8472)
+![image](https://github.com/user-attachments/assets/31571481-c37e-402c-a399-3d6c5a1d5402)
+![image](https://github.com/user-attachments/assets/33f43b38-879e-44ea-a0b8-c2ab50e4b90f)
+![image](https://github.com/user-attachments/assets/69cb73a9-4bea-454c-a158-ea7e6ab82e2b)
+![image](https://github.com/user-attachments/assets/3898c38f-92cf-4e9b-a428-aaac2d5bfe08)
